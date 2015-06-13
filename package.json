@@ -1,0 +1,33 @@
+{
+	"name": "selectel.boilerplate",
+	"version": "0.0.1",
+	"dependencies": {
+		"gulp": "",
+		"gulp-if": "",
+		"gulp-jade": "",
+		"gulp-shell": "",
+		"gulp-babel": "",
+		"gulp-stylus": "",
+		"gulp-notify": "",
+		"gulp-concat": "",
+		"gulp-uglify": "",
+		"gulp-inject": "",
+		"gulp-cssmin": "",
+		"gulp-rename": "",
+		"gulp-plumber": "",
+		"gulp-changed": "",
+		"gulp-sourcemaps": "",
+		"gulp-autoprefixer": "",
+		"gulp-load-plugins": "",
+		"gulp-bower-normalize": "",
+		"main-bower-files": "",
+		"del": "",
+		"lodash": "",
+		"optimist": "",
+		"run-sequence": "",
+		"browser-sync": ""
+	},
+	"scripts": {
+		"start": "./node_modules/.bin/gulp build:prod"
+	}
+}
