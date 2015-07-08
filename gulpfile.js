@@ -75,8 +75,12 @@ g.task('sync', function (done) {
 });
 
 // Main tasks
-g.task('build:fast', function (done) {
+g.task('build:dev', function (done) {
 	seq('wp:watch', 'sync', done);
+});
+
+g.task('build:fast', function (done) {
+	seq('wp:full', done);
 });
 
 g.task('build:full', function (done) {

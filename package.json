@@ -37,7 +37,8 @@
 		"node": ">=0.12"
 	},
 	"scripts": {
-		"dev": "ENV=DEV gulp build:fast",
-		"prod": "ENV=PROD gulp build:full"
+		"dev": "ENV=DEV gulp build:dev",
+		"prod": "ENV=PROD gulp build:full",
+		"stage": "ENV=STAGE gulp build:fast"
 	}
 }
