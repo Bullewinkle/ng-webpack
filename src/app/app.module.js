@@ -1,6 +1,9 @@
 // Styles
 require('app/app.module.styl');
 
+// Home template
+require('app/home.jade');
+
 // Application
 angular
 	.module('app', [
@@ -20,7 +23,7 @@ angular
 			url: '/',
 			views: {
 				'body@': {
-					template: require('app/home.jade')
+					templateUrl: 'tpl/src/app/home.jade'
 				}
 			}
 		});
@@ -31,3 +34,4 @@ angular
 	.controller('app.ctrl', function () {
 		console.log('[app]', 'ready');
 	})
+

@@ -63,7 +63,7 @@ cfg.entry.vendor = 'vendor/vendor.module.js';
 cfg.output.path = path.resolve(__DIST, 'assets');
 cfg.output.publicPath = '/assets/';
 if (DEV) {
-	cfg.output.filename = '[name]-[hash].js';
+	cfg.output.filename = '[name].js';
 } else {
 	cfg.output.filename = '[name]-[chunkhash].js';
 };
@@ -81,7 +81,7 @@ cfg.plugins.push(new $.HTML({
 
 // Separated styles
 if (DEV) {
-	cfg.plugins.push(new $.Extract('[name]-[hash].css'));
+	cfg.plugins.push(new $.Extract('[name].css'));
 } else {
 	cfg.plugins.push(new $.Extract('[name]-[chunkhash].css'));
 };
@@ -120,7 +120,7 @@ cfg.module.loaders.push({
 
 cfg.module.loaders.push({
 	test: /\.jade$/,
-	loader: 'jade'
+	loader: 'ng-cache?prefix=tpl/[dir]/[dir]!jade-html'
 });
 
 cfg.module.loaders.push({
