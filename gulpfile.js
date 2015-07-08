@@ -1,15 +1,15 @@
 // Dependencies
-var path = require('path');
-var seq = require('run-sequence');
 var g = require('gulp');
 var $ = require('gulp-load-plugins')();
 var wp = require('webpack');
 var cfg = require('./webpack');
+var seq = require('run-sequence');
 var sync = require('browser-sync');
+var path = require('path');
 
 // Webpack watch build
 g.task('wp:watch', function (done) {
-	wp(cfg).watch(200, function (err, stats) {
+	wp(cfg).watch(300, function (err, stats) {
 		if (err) throw new $.util.PluginError('webpack', err);
 		$.util.log('[webpack]', stats.toString({colors: true}));
 	});
