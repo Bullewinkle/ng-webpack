@@ -1,6 +1,6 @@
 # Todo:
-- [ ] Sprite
-- [ ] Retina
-- [ ] Templates
-- [ ] Translates
-- [ ] Sync MD5
+- Sprite
+- Retina
+- Templates
+- Translates
+- Sync MD5
