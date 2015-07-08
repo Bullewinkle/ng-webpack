@@ -1,8 +1,13 @@
 {
-	"name": "selectel.boilerplate",
-	"version": "0.0.1",
+	"name": "app",
 	"dependencies": {
-	},
-	"scripts": {
+		"lodash": "",
+		"angular": "",
+		"angular-touch": "",
+		"angular-animate": "",
+		"angular-sanitize": "",
+		"angular-resource": "",
+		"angular-ui-router": "",
+		"animate.css": ""
 	}
 }
