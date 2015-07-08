@@ -13,9 +13,9 @@ var $ = {
 };
 
 // Main paths
-var __SRC = path.resolve('src');
-var __DIST = path.resolve('dist');
-var __BOWER = path.resolve('bower_components');
+var __SRC = path.resolve(__dirname, 'src');
+var __DIST = path.resolve(__dirname, 'dist');
+var __BOWER = path.resolve(__dirname, 'bower_components');
 
 // Enviroment
 var ENV = process.env.ENV;
