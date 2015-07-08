@@ -1,7 +1,7 @@
 // Styles
 require('app/app.module.styl');
 
-// Home template
+// Templates
 require('app/home.jade');
 
 // Application
@@ -33,5 +33,5 @@ angular
 	})
 	.controller('app.ctrl', function () {
 		console.log('[app]', 'ready');
-	})
+	});
 
